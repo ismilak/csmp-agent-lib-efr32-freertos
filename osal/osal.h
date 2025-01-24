@@ -37,6 +37,19 @@ typedef enum {
  timer_num = 4   /**< max amount of timers */
 } osal_timerid_t;
 
+typedef enum {
+  RUN_IMAGE = 0,
+  UPLOAD_IMAGE = 1,
+  BACKUP_IMAGE = 2,
+  BL_IMAGE = 3,
+  LMAC_IMAGE = 4,
+  BBU_IMAGE = 5,
+  PHY_IMAGE = 6,
+  PATCH_IMAGE = 7,
+  THIRDPARTY_IMAGE = 8,
+  NUMSLOTS = 9
+} osal_slotid_t;
+
 typedef void (*trickle_timer_fired_t) ();
 
 /****************************************************************************
